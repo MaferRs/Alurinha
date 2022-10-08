@@ -30,7 +30,7 @@
    display: flex;
    /* flex-direction: column;
    flex-wrap: wrap; */
-   height: 250px;
+   height: 260px;
    flex-flow: column wrap;
 }
 .conteudoPrincipal-cursos{
@@ -52,7 +52,6 @@
 .videoSobre .container{
    display: flex;
 
-
 }
 .videoSobre-sobre{
    text-align: center;
@@ -65,7 +64,9 @@
 }
 .videoSobre-video{
    flex-grow: 1;
+   flex-shrink: 2;
 }
+
 
 /*Mobile*/
 @media(max-width:768px){
@@ -103,5 +104,11 @@
 }
 .cabecalhoPrincipal-nav-link-app{
    order: -1;
+}
+.videoSobre .container{
+flex-direction: column;
+}
+.videoSobre-video{
+   margin: 0 auto;
 }
 }
